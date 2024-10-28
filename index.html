@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuádruplo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #5b3482; 
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .container {
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        #titulo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00ddff; /* Color azul de Bootstrap */
+        }
+
+        h3, h2 {
+            color: #34384088; /* Color gris oscuro */
+        }
+
+        textarea {
+            background-color: #f1f3f5;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 1rem;
+            color: #495057;
+        }
+
+        textarea::placeholder {
+            color: #6c757d;
+        }
+
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul */
+            border-color: #80bdff; /* Borde azul al hacer focus */
+        }
+
+        .custom-btn {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .custom-btn:hover {
+            background-color: #0056b3; 
+        }
+
+        .text-center {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 30px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center" id="titulo">Cuádruplo</h1>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Operación</h3>
+                <textarea id="texto" class="form-control" rows="7" placeholder="Ingresa los números (ej. 1 + 2 + 3 + 4)"></textarea>
+                <button class="btn custom-btn mt-3" id="guardarTexto">Evaluar</button>
+            </div>
+            <div class="col-md-6">
+                <h2>Resultado</h2>
+                <textarea id="busqueda" class="form-control" rows="7" placeholder="Resultado" readonly></textarea>
+                <br>
+                <div class="text-center">
+                    <button class="btn custom-btn" id="limpiar">Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="cuadruplo.js"></script> 
+</body>
+</html>

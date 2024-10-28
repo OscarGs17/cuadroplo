@@ -1,0 +1,67 @@
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    margin-top: 50px;
+}
+
+#titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff; /* Color azul de Bootstrap */
+}
+
+h3, h2 {
+    color: #343a40; /* Color gris oscuro */
+}
+
+textarea {
+    background-color: #f1f3f5;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #495057;
+}
+
+textarea::placeholder {
+    color: #6c757d;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul */
+    border-color: #80bdff; /* Borde azul al hacer focus */
+}
+
+.custom-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+}
+
+.text-center {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 30px;
+        padding: 20px;
+    }
+}
